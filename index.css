@@ -1,0 +1,115 @@
+:root {
+	color: #e4e8fd;
+}
+
+body {
+	background-image: url("./public/wallpaper.png");
+	margin: 0;
+}
+
+#root {
+	padding: 0;
+	background: #1a1b26;
+	min-height: 100vh;
+	opacity: 80%;
+}
+
+.container {
+	padding: 1rem;
+}
+
+#run-button {
+	padding-top: 0;
+	padding-bottom: 0;
+}
+
+.small-container {
+	padding: 0.5rem;
+}
+
+input {
+	background: none;
+	color: #e4e8fd;
+	border: none;
+}
+
+.number-input {
+	border: none;
+	background: none;
+	color: #e4e8fd;
+	width: 4rem;
+	outline: none;
+	margin-left: 1rem;
+}
+
+.text-input {
+	border: none;
+	background: none;
+	color: #e4e8fd;
+	outline: none;
+	margin-left: 1rem;
+}
+
+#add-endpoint {
+	display: flex;
+}
+
+#fname {
+	width: 7rem;
+}
+
+#fmethod {
+	width: 3rem;
+}
+
+#fsleep {
+	width: 4rem;
+}
+
+#add {
+	border: solid rgb(200, 156, 241) 0.1rem;
+}
+
+#addBatch {
+	border: solid rgb(200, 156, 241) 0.1rem;
+}
+
+.user-data {
+	display: flex;
+	align-items: center;
+}
+
+pre {
+	margin: 0.2rem;
+}
+
+.user-data > pre {
+	margin-right: 1rem;
+}
+
+.time-bar {
+	display: flex;
+}
+
+.bar {
+	height: 1rem;
+	margin-right: 0.2rem;
+	position: relative;
+	transition: transform 0.2s;
+}
+
+.bar:hover {
+	transform: scale(1.5);
+}
+
+.badge {
+	display: none;
+	position: absolute;
+	bottom: 1rem;
+	left: 1rem;
+	width: 50rem;
+}
+
+#list-endpoints {
+	margin-top: 0;
+}

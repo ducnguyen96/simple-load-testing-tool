@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<script defer src="./helpers.js"></script>
+		<script defer src="./settings.js"></script>
+		<script defer src="./index.js"></script>
+		<script defer src="./run.js"></script>
+		<link rel="stylesheet" href="./index.css" />
+		<title>Load Testing for GIMS</title>
+	</head>
+	<body>
+		<div id="root">
+			<div class="container">
+				<h3>Settings:</h3>
+				<div class="small-container">
+					<label for="concurrent-user">Concurrent users:</label>
+					<input class="number-input" type="number" id="concurrent-user" />
+					<label for="concurrent-user">Domain:</label>
+					<input class="text-input" type="text" id="domain" /><br /><br />
+					<span>Endpoints:</span>
+					<div class="small-container">
+						<ul id="list-endpoints"></ul>
+						<form action="/" id="add-endpoint">
+							<input type="text" id="fmethod" value="GET" />
+							<input type="text" id="fname" value="List branches" /><br />
+							<input type="text" id="furl" value="/v1/branches/branches" />
+							<input type="text" id="fbody" value="{}" />
+							<input type="number" id="fsleep" value="100" />
+							<input type="submit" value="Add" id="add" />
+							<input type="submit" value="AddBatch" id="addBatch" />
+						</form>
+					</div>
+				</div>
+			</div>
+
+			<div class="container" id="run-button">
+				<button id="run">RUN</button>
+			</div>
+
+			<div class="container">
+				<div class="container" id="run-container"></div>
+			</div>
+		</div>
+	</body>
+</html>
