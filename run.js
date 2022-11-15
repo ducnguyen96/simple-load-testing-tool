@@ -97,10 +97,12 @@ const drawBar = (user, name, timeTook, error) => {
 
 	newBar.addEventListener("mouseover", () => {
 		badgeDom.style.display = "block";
+		newBar.style.zIndex = 2;
 	});
 
 	newBar.addEventListener("mouseleave", () => {
 		badgeDom.style.display = "none";
+		newBar.style.zIndex = 1;
 	});
 
 	timeBarDom.appendChild(newBar);
